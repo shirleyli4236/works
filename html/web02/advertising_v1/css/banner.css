@@ -1,0 +1,62 @@
+@charset "utf-8";
+/* CSS Document */
+* html #search form dd input {
+	margin-top: -1px;
+}
+/*解決全區導覽按鈕遭切斷的問題*/
+* html #global-nav li{
+	padding-bottom: 1px;
+}
+* {
+	margin: 0;
+	padding: 0;
+	font-size:12px;
+}
+/* advertising 廣告
+---------------------------------------------*/
+
+#abgneBlock {
+		width: 950px;
+		height: 348px;
+		position: relative;
+		overflow: hidden;
+		border: 1px solid #ccc;
+}
+#abgneBlock ul.list {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		position: absolute;
+		width: 9999px;
+		height: 100%;
+}
+#abgneBlock ul.list li {
+		float: left;
+		width: 950px;
+		height: 348px;
+}
+#abgneBlock .list img{
+		width: 950px;
+		height: 348px;
+		border: 0;
+}
+#abgneBlock ul.playerControl {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		position: absolute;
+		bottom: 5px;
+		right: 5px;
+		height: 14px;
+}
+#abgneBlock ul.playerControl li {
+		float: left;
+		width: 23px;
+		height: 14px;
+		cursor: pointer;
+		margin: 0px 2px;
+		background: url(../images/rect_ctrl.png) no-repeat 0 0;
+}
+	#abgneBlock ul.playerControl li.current { 
+		background-position: -23px 0;
+}

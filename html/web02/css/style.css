@@ -1,0 +1,81 @@
+@charset "utf-8";
+/* CSS Document */
+
+* html #search form dd input {
+	margin-top: -1px;
+}
+/*解決全區導覽按鈕遭切斷的問題*/
+* html #global-nav li{
+	padding-bottom: 1px;
+}
+
+/* 將所有HTML標籤的內距及邊界設為0 */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-image: url(../images/bg.gif);
+	background-repeat: repeat-x;  /* 背景圖重複:水平重複 */
+}
+
+#wrapper{
+	width:950px;
+	margin:0 auto; /* 邊界:上下為0, 左右為自動(對齊網頁中央)  */
+	text-align:center;  /* 文字對齊 */
+}
+
+/* Header
+---------------------------------------------*/
+#header {
+ height:470px;
+}
+#title{
+	 width: 950px;
+     height: 84px;
+	 float: left;
+}
+#logo{
+	 width: 450px;
+     height: 84px;
+	 float: left;
+	 background: url(../images/mainnav_01.gif) no-repeat;
+}
+#facefook{
+	 width: 500px;
+     height: 54px;
+	 float: left;
+	 color: #FFF;
+}
+/* subNav文字選單
+--------------------*/
+#subNav{
+	 width: 500px;
+     height: 30px;
+	 float: left;
+	 background: url(../images/mainnav_03.gif) no-repeat;
+}
+#button {
+        color: #000;
+        margin: 0px;  /*指定上下左右的邊界階為0*/
+        padding:0px; /*指定上下左右的內距階為0*/
+		text-align: right;/*指定文字置右對齊*/
+		list-style:none; /*將項目符號設為隱藏*/
+}
+#button p {        
+        color:#fff;
+	    margin:3px 0 0;
+		overflow:hidden;/*若有溢排,則隱藏溢排的部分*/
+}                
+#button p a {
+        color: #FFF;/*指定文字顏色*/
+        text-decoration: none;/*將超連結下方的底線隱藏起來*/
+}
+#button p a:hover{
+      color:#FFFF00;　　 /* 設定滑鼠移過時，改變文字顏色的設定 */
+}
+#button p a:visited{
+　   color:#FFFF00;　 /* 設定滑鼠移過時，改變文字顏色的設定 */
+}
+/*-- end of subNav --*/

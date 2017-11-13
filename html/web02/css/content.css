@@ -1,0 +1,24 @@
+@charset "utf-8";
+/* CSS Document */
+* html #search form dd input {
+	margin-top: -1px;
+}
+/*解決全區導覽按鈕遭切斷的問題*/
+* html #global-nav li{
+	padding-bottom: 1px;
+}
+* {
+	margin: 0;
+	padding: 0;
+	border: 0; 
+}
+
+/* ContentWrapper 三欄式版面
+---------------------------------------------*/
+#content {
+	width: 939px;
+	height: 700px;
+	float: left;
+	padding:6px;
+	text-align:center;
+}

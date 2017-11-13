@@ -1,0 +1,666 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*  background
+/* ---------------------------------------------- */
+.pace {
+  -webkit-pointer-events: none;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999999;
+  -webkit-transform: translate3d(0, -50px, 0);
+  -ms-transform: translate3d(0, -50px, 0);
+  transform: translate3d(0, -50px, 0);
+  -webkit-transition: -webkit-transform .5s ease-out;
+  -ms-transition: -webkit-transform .5s ease-out;
+  transition: transform .5s ease-out;
+}
+
+.pace.pace-active {
+  -webkit-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.pace .pace-progress {
+  display: block;
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  right: 100%;
+  width: 100%;
+  height: 10px;
+  background: rgba(235, 102, 102, 1); /* Primary color, can be changed via colors.css */
+  pointer-events: none;
+}
+
+
+/* styles
+/* ---------------------------------------------- */
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    color: #000; 
+    background-color: #fff;
+}
+
+h1,h2 {
+    margin: 0 0 20px 0;
+    text-transform: none;
+    color: rgba(235, 102, 102, 1);
+    font-weight: 600;
+    letter-spacing: 2px;
+    line-height: 1.5;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h3 {
+    margin: 30px 0 10px 0;
+    font-size: 18px;
+    text-transform: none;
+    color: #000;
+    font-weight: 600;
+    letter-spacing: 2px;
+    line-height: 1.5;
+}
+
+h4 {
+    font-size: 18px;
+    margin: 0;
+    text-transform: none;
+    color: rgba(235, 102, 102, 1);
+    font-weight: 600;
+    letter-spacing: 2px;
+    line-height: 1.5;
+}
+
+.highlight{
+    font-size: 40px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    color: rgba(235, 102, 102, 1);
+}
+
+.no-bottom-pad{
+    padding-bottom: 0 !important;
+}
+
+.no-top-pad{
+    padding-top: 0 !important;
+}
+
+/* about
+/* ---------------------------------------------- */
+.about p{
+    margin: 0 0 5px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* work
+/* ---------------------------------------------- */
+.works {
+    background-color: rgba(235, 102, 102, 1);
+}
+
+.works h1{
+    color: #fff;
+}
+
+.works-text h4{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3em;
+    font-weight: 600;
+    color: #fff;
+    margin: 10px 0 10px 0px;
+}
+
+.works-box-icon{
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    font-size: 40px;
+    border: 2px solid #fff;
+    color: #fff;
+    line-height: 120px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    -o-transition: all .6s;
+    -moz-transition: all .6s;
+    -webkit-transition: all .6s;
+    -ms-transition: all .6s;
+    transition: all .6s;
+}
+
+.more{
+    margin-bottom: 30px;
+}
+
+a.more {
+	color: #fff;
+	text-decoration: none;
+	font-size: 1em;
+	font-weight: 400;
+	padding: 3px 12px;
+	border: 2px solid #fff;
+	border-radius: 10px;
+    z-index:1;  
+}
+a.more:hover{
+    border-radius: 10px;
+    color: rgba(235, 102, 102, 1);
+    background-color: #fff; 
+}
+
+
+/* contact
+/* ---------------------------------------------- */
+.contact-box-icon{
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    background: rgba(235, 102, 102, 1);
+    font-size: 50px;
+    color: #fff;
+    line-height: 120px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    -o-transition: all .6s;
+    -moz-transition: all .6s;
+    -webkit-transition: all .6s;
+    -ms-transition: all .6s;
+    transition: all .6s;
+}
+
+.contact a {
+    color: rgba(235, 102, 102, 1);
+}
+
+.contact p {
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 60px;
+}
+
+
+/* text 間距
+/* ---------------------------------------------- */
+
+.content-section {
+    padding: 60px 0;
+}
+
+/* hamburger bar icon
+/* ---------------------------------------------- */
+.button_container {
+    position: relative;
+    margin-top: 14px;
+    height: 28px;
+    width: 28px;
+    cursor: pointer;
+    z-index: 999;
+    -webkit-transition: opacity .25s ease;
+            transition: opacity .25s ease;
+}
+
+/* Animate the top hamburger bar */
+.button_container.active .top {
+    -webkit-transform: translateY(8px) translateX(0) rotate(45deg);
+        -ms-transform: translateY(8px) translateX(0) rotate(45deg);
+            transform: translateY(8px) translateX(0) rotate(45deg);
+    background: #FFF;
+}
+
+/* the middle hamburger  X  */
+.button_container.active .middle {
+    opacity: 0;
+    background: #FFF;
+}
+
+/* the bottom hamburger icon */
+.button_container.active .bottom {
+    -webkit-transform: translateY(-8px) translateX(0) rotate(-45deg);
+        -ms-transform: translateY(-8px) translateX(0) rotate(-45deg);
+            transform: translateY(-8px) translateX(0) rotate(-45deg);
+    background: #FFF;
+}
+
+.button_container span {
+    background: #fff;
+    border: none;
+    height: 4px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transition: all .35s ease;
+    transition: all .35s ease;
+    cursor: pointer;
+}
+
+.button_container span:nth-of-type(2) {
+    top: 8px;
+}
+
+.button_container span:nth-of-type(3) {
+    top: 16px;
+}
+
+/* header hamburger menu */
+.overlay {
+    position: fixed;
+    display: block; 
+    background: rgba(235, 102, 102, 1); /* Primary color, can be changed via colors.css */
+    top: 0;
+    border: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: 0%;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: opacity .35s, visibility .35s, height .35s;
+            transition: opacity .35s, visibility .35s, height .35s;
+    overflow: auto;
+}
+
+.overlay.open {
+    opacity: .95;
+    visibility: visible;
+    height: 100%;
+}
+
+.overlay.open li {
+    -webkit-animation: fadeInRight .5s ease forwards;
+            animation: fadeInRight .5s ease forwards;
+    -webkit-animation-delay: .35s;
+        animation-delay: .35s;
+}
+
+.overlay.open li:nth-of-type(1) {
+    -webkit-animation-delay: .40s;
+            animation-delay: .40s;
+}
+
+.overlay.open li:nth-of-type(2n) {
+    -webkit-animation-delay: .50s;
+            animation-delay: .50s;
+}
+
+.overlay nav {
+    position: relative;
+    height: 50%;
+    top: 50%;
+    font-size: 30px;
+    font-family: "Raleway", "Helvetica Neue", Arial, sans-serif;
+    text-transform: none;
+    font-weight: 600;
+    text-align: center;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+}
+
+.overlay ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: inline-block;
+    position: relative;
+    height: 100%;
+}
+
+.overlay ul li {
+    display: block;
+    height: 15%;
+    height: calc(100% / 8);
+    min-height: 65px;
+    position: relative;
+    opacity: 0;
+}
+
+.overlay ul li a {
+    display: block;
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.overlay ul li a:hover:after,
+.overlay ul li a:focus:after,
+.overlay ul li a:active:after {
+    width: 50%;
+}
+
+/* Link underline on hover */
+.overlay ul li a:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0%;
+    height: 2px;
+    background: #fff;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    -webkit-transition: .15s;
+            transition: .15s;
+}
+
+
+/*   header
+/* ---------------------------------------------- */
+
+.intro-carousel {
+    width: 100%;
+    /*height: 100%;*/
+    color: #fff;
+    background:#222;
+}
+
+.carousel-caption{
+    text-shadow: none;
+    bottom: 25%;
+}
+
+.carousel-caption h1{
+    padding: 0;
+    margin: 10px 0;
+    color: #fff;
+} 
+
+.carousel-caption .intro-text{
+    padding: 0;
+}
+
+.carousel-caption .btn{
+    margin:0;
+}
+
+.carousel-control{
+    top: 50%;
+    width:4%;
+    height:7%;
+    margin: 0;
+    text-shadow: none;
+}
+
+.carousel-control.left,
+.carousel-control.right{
+    background: none;
+    z-index: 100;
+}
+
+.overlay-detail {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #000; /* Set to black, can be changed via colors.css */
+    opacity: 0.5;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+
+/* mouse */
+.mouse {
+    width: 25px;
+    height: 45px;
+    border: 2px solid #fff;
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    margin-left: -12.5px;
+    border-radius: 12px;
+}
+
+.mouse:after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    width: 5px;
+    background-color: #fff;
+    border-radius: 100%;
+    left: 50%;
+    margin-left: -2.5px;
+    top: 10px;
+     -webkit-animation: rotateplane 1.2s infinite ease-in-out;
+             animation: rotateplane 1.2s infinite ease-in-out;
+}
+
+
+/* header - Background images Full
+/* ---------------------------------------------- */
+
+.carousel,
+.item,
+.active {
+    height: 100%;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+.fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    -webkit-background-size: cover;
+       -moz-background-size: cover;
+            background-size: cover;
+         -o-background-size: cover;
+}
+
+
+/* Footer
+/* ---------------------------------------------- */
+
+footer .copynote{
+    color:#fff;
+    padding: 20px 0;
+    background:rgba(54, 53, 54, 1); /* Dark color/Footer color, can be changed via colors.css */
+}
+
+/* Media Queries [min-width:992px]
+/* ---------------------------------------------- */
+
+/* Media Queries [max-width:1199px]
+/* ---------------------------------------------- */
+
+/* Media Queries [min-width:768px]
+/* ---------------------------------------------- */
+
+@media(min-width:768px) {
+    .about{
+        text-align: left;
+    }
+
+    p {
+        margin: 0 0 35px;
+        font-size: 18px;
+        line-height: 1.6;
+    }
+
+    .navbar-custom {
+        padding: 20px 0;
+        border-bottom: 0;
+        letter-spacing: 1px;
+        background: 0 0;
+        -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
+           -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
+                transition: background .5s ease-in-out, padding .5s ease-in-out;
+    }
+    .navbar-custom.top-nav-collapse {
+        padding: 10px 0;
+        background: rgba(0, 0, 0, 0.7); /* Primary color, can be changed via colors.css */
+        -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
+           -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
+                transition: background .5s ease-in-out, padding .5s ease-in-out;
+        -webkit-box-shadow: 0 0 10px 2px rgba(0,0,0,.1);
+                box-shadow: 0 0 10px 2px rgba(0,0,0,.1);
+
+    }
+
+    .navbar-custom.top-nav-collapse .navbar-brand{
+        color: #fff;
+    }
+
+    .navbar-custom.top-nav-collapse .button_container span{
+        background: #fff;
+    }
+
+    .navbar-custom.top-nav-collapse .button_container.active span.top,
+    .navbar-custom.top-nav-collapse .button_container.active span.bottom{
+        background:#fff;
+    }
+}
+
+/* Media Queries [max-width:767px]
+/* ---------------------------------------------- */
+
+@media(max-width:767px) {
+
+    .about {
+        text-align: left;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .mouse{
+        display: none;
+    }
+
+    .circle {
+        padding: 0px;
+        font-size: 18px;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+    }
+
+    .navbar-custom {
+        padding: 20px 0;
+        border-bottom: 0;
+        letter-spacing: 1px;
+        background: 0 0;
+        -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
+           -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
+                transition: background .5s ease-in-out, padding .5s ease-in-out;
+    }
+    .navbar-custom.top-nav-collapse {
+        padding: 10px 0;
+        background: rgba(0, 0, 0, 0.7); /* Primary color, can be changed via colors.css */
+        -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
+           -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
+                transition: background .5s ease-in-out, padding .5s ease-in-out;
+        -webkit-box-shadow: 0 0 10px 2px rgba(0,0,0,.1);
+                box-shadow: 0 0 10px 2px rgba(0,0,0,.1);
+
+    }
+
+    .navbar-custom.top-nav-collapse .navbar-brand{
+        color: #fff;
+    }
+
+    .navbar-custom.top-nav-collapse .button_container span{
+        background: #fff;
+    }
+
+    .navbar-custom.top-nav-collapse .button_container.active span.top,
+    .navbar-custom.top-nav-collapse .button_container.active span.bottom{
+        background:#fff;
+    }
+
+    .works-box-icon{
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    font-size: 40px;
+    border: 2px solid #fff;
+    color: #fff;
+    line-height: 120px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    -o-transition: all .6s;
+    -moz-transition: all .6s;
+    -webkit-transition: all .6s;
+    -ms-transition: all .6s;
+    transition: all .6s;
+    }
+
+}
+
+
+

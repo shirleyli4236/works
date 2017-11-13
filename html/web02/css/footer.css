@@ -1,0 +1,132 @@
+@charset "utf-8";
+/* CSS Document */
+* html #search form dd input {
+	margin-top: -1px;
+}
+/*解決全區導覽按鈕遭切斷的問題*/
+* html #global-nav li{
+	padding-bottom: 1px;
+}
+* {
+    margin: 0 auto;
+	font-size:12px;
+	font-family: "細明體";
+	border: 0;
+	text-decoration:none;
+}
+a{
+	color:#888;
+}
+a:hover{
+	color:#C00;
+}
+/* footer 頁尾
+---------------------------------------------*/
+#footer{
+	width: 939px;
+	height: 150px;
+	float: left;
+}
+/* footer00
+---------------------------------------------*/
+#line{
+	width: 938px;
+	height: 6px;
+	float: left;
+	background: url(../images/footer_02.gif) no-repeat;
+}
+#footerNav{
+	width: 938px;
+	height: 54px;
+	float: left;
+}
+/* Nav*/
+#about{
+	width: 123px;
+	height: 54px;
+	float: left;
+	background: url(../images/footer_04.gif) no-repeat;
+}
+#service{
+	width: 100px;
+	height: 54px;
+	float: left;
+	line-height: 24px;/* 設定文字行距 */
+}
+#shopping{
+	width: 123px;
+	height: 54px;
+	float: left;
+	background: url(../images/footer_06.gif) no-repeat;
+}
+#explanation {
+	width: 93px;
+	height: 54px;
+	float: left;
+	line-height: 24px;/* 設定文字行距 */
+}
+#pay {
+	width: 114px;
+	height: 54px;
+	float: left;
+}
+#full{
+	width: 154px;
+	height: 54px;
+	float: left;
+	background: url(../images/footer_09.gif) no-repeat;
+}
+#member{
+	width: 154px;
+	height: 54px;
+	float: left;
+	background: url(../images/footer_10.gif) no-repeat;
+}
+#join{
+	width: 77px;
+	height: 54px;
+	float: left;
+	line-height: 24px;/* 設定文字行距 */
+}
+/* end Nav*/
+#copyright{
+	width: 938px;
+	height: 90px;
+	float: left;
+}
+#sunisland{
+	width: 223px;
+	height: 90px;
+	float: left;
+	background: url(../images/footer_12.gif) no-repeat;
+}
+#address{
+	width: 639px;
+	height: 90px;
+	float: left;
+	background: url(../images/footer_13.gif) no-repeat;
+}
+#wod{
+	width: 600px;
+	height: 60px;
+	color:#fff;
+	font-family: "細明體";
+	padding:15px;
+	text-align: left;
+	line-height: 14px;　　　          　/* 設定文字行距 */
+    letter-spacing: 3px;　            　/* 設定文字間距 */
+	list-style:none; /*將項目符號設為藏齊*/
+}
+#mailfr{
+	width: 76px;
+	height: 90px;
+	float: left;
+}
+/* footer02
+---------------------------------------------*/
+#footer02{
+	width: 6px;
+	height: 150px;
+	float: left;
+	background: url(../images/footer_03.gif) no-repeat;
+}

@@ -1,0 +1,103 @@
+@charset "utf-8";
+/* CSS Document */
+
+@charset "utf-8";
+/* CSS Document */
+* html #search form dd input {
+	margin-top: -1px;
+}
+/*解決全區導覽按鈕遭切斷的問題*/
+* html #global-nav li{
+	padding-bottom: 1px;
+}
+* {
+    margin: 0 auto;
+	border: 0; 
+}
+/* rightNav 右版面
+---------------------------------------------*/
+#rrightNav{
+	width: 609px;
+	height: 554px;
+	float:right;
+	text-align:center;
+}
+/* MiddleNav 中版面
+-----------------------*/
+#rcontent{
+	width: 352px;
+	height: 554px;
+	float: left;
+	background: url(../images/rightNav_01.gif) no-repeat;
+}
+#rsidebar{
+	width: 257px;
+	height: 554px;
+	float: left;
+}
+#rnews{
+	width: 257px;
+	height: 32px;
+	float: left;
+	background: url(../images/rightNav_02.gif) no-repeat;
+}
+#rword{
+	width: 257px;
+	height: 64px;
+	float: left;
+	background: url(../images/rightNav_03.gif) no-repeat;
+}
+#rword h1{
+	width: 240px;
+	color:#F00;
+	padding:4px;
+	text-align: left;
+	list-style:none; /*將項目符號設為藏齊*/
+}
+/*-- start of p --*/
+
+
+/*-- end of p --*/
+
+#rteaching{
+	width: 257px;
+	height: 87px;
+	float: left;
+	background: url(../images/rightNav_04.gif) no-repeat;
+}
+#rqrcode{
+	width: 257px;
+	height: 115px;
+	float: left;
+	background: url(../images/rightNav_05.gif) no-repeat;
+}
+#rkalita{
+	width: 257px;
+	height: 119px;
+	float: left;
+	background: url(../images/rightNav_06.gif) no-repeat;
+}
+
+#rproducts{
+	width: 257px;
+	height: 139px;
+	float: left;
+}
+#rappliance{
+	width: 124px;
+	height: 139px;
+	float: left;
+	background: url(../images/rightNav_07.gif) no-repeat;
+}
+#rblank{
+	width: 9px;
+	height: 139px;
+	float: left;
+	background: url(../images/rightNav_08.gif) no-repeat;
+}
+#rpower{
+	width: 124px;
+	height: 139px;
+	float: left;
+	background: url(../images/rightNav_09.gif) no-repeat;
+}

@@ -1,0 +1,117 @@
+@charset "utf-8";
+/* CSS Document */
+* html #search form dd input {
+	margin-top: -1px;
+}
+/*解決全區導覽按鈕遭切斷的問題*/
+* html #global-nav li{
+	padding-bottom: 1px;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+/* mainNav主選單
+---------------------------------------------*/
+#mainNav {
+	width: 950px;
+    height: 38px;
+	float: left;
+}
+ul#gNavi{
+	width: 950px;
+	margin:0 auto;
+	float: left;
+	list-style:none;
+}
+ul#gNavi li{
+float:left;/*使按鈕橫向並排排列*/
+padding-top:0px;
+}
+ul#gNavi li a{
+text-indent:-9999px;/*將<h1>~</h1>包圍文字移動至不會顯示出來的位置*/
+display:block;
+height:38px;
+background-repeat:no-repeat;
+}
+
+/*各按鈕背景圖像設定*/
+ul#gNavi li a#gMenu1{
+	background-image:url(../images/mainnav_04.gif);
+	width:216px;
+}
+ul#gNavi li a#gMenu2{
+	background-image:url(../images/mainnav_05.gif);
+	width:133px;
+}
+ul#gNavi li a#gMenu3{
+	background-image:url(../images/mainnav_06.gif);
+	width:101px;
+}
+ul#gNavi li a#gMenu4{
+	background-image:url(../images/mainnav_07.gif);
+	width:100px;
+}
+ul#gNavi li a#gMenu5{
+	background-image:url(../images/mainnav_08.gif);
+	width:100px;
+}
+ul#gNavi li a#gMenu6{
+	background-image:url(../images/mainnav_09.gif);
+	width:100px;
+}
+ul#gNavi li a#gMenu7{
+	background-image:url(../images/mainnav_10.gif);
+	width:100px;
+}
+ul#gNavi li a#gMenu8{
+	background-image:url(../images/mainnav_11.gif);
+	width:100px;
+}
+
+/*各按鈕滑鼠滑過時的設定*/
+ul#gNavi li a#gMenu1:hover,/*用hover設定各選單按鈕於滑鼠滑過時的反應*/
+ul#gNavi li a#gMenu2:hover,
+ul#gNavi li a#gMenu3:hover,
+ul#gNavi li a#gMenu4:hover,
+ul#gNavi li a#gMenu5:hover,
+ul#gNavi li a#gMenu6:hover,
+ul#gNavi li a#gMenu7:hover,
+ul#gNavi li a#gMenu8:hover{
+background-position:0 -38px;
+}
+
+/*目前位置的顯示設定*/
+ul#gNavi li a#gMenu1_on{
+background-image:url(../images/mainnav_04.gif);
+background-position:0 -38px;
+}
+ul#gNavi li a#gMenu2_on{
+background-image:url(../images/mainnav_05.gif);
+background-position:0 -38px;
+}
+ul#gNavi li a#gMenu3_on{
+	background-image:url(../images/mainnav_06.gif);
+	background-position:0 -38px;
+}
+ul#gNavi li a#gMenu4_on{
+background-image:url(../images/mainnav_07.gif);
+background-position:0 -38px;
+}
+ul#gNavi li a#gMenu5_on{
+background-image:url(../images/mainnav_08.gif);
+background-position:0 -38px;
+}
+ul#gNavi li a#gMenu6_on{
+background-image:url(../images/mainnav_09.gif);
+background-position:0 -38px;
+}
+ul#gNavi li a#gMenu7_on{
+background-image:url(../images/mainnav_10.gif);
+background-position:0 -38px;
+}
+ul#gNavi li a#gMenu8_on{
+background-image:url(../images/mainnav_11.gif);
+background-position:0 -38px;
+}
+/*-- end of mainNav主選單 --*/

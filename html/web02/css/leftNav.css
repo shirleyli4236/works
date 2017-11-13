@@ -1,0 +1,58 @@
+@charset "utf-8";
+/* CSS Document */
+* html #search form dd input {
+	margin-top: -1px;
+}
+/*解決全區導覽按鈕遭切斷的問題*/
+* html #global-nav li{
+	padding-bottom: 1px;
+}
+* {
+    margin: 0 auto;
+	border: 0; 
+}
+
+/* leftNav 左版面
+---------------------------------------------*/
+#leftNav{
+	width: 318px;
+	height: 553px;
+	float: left;
+}
+#sidebarmain {
+	width: 318px;
+	height: 294px;
+}
+#information{
+	width: 318px;
+	height: 76px;
+}
+#tel {
+	width: 247px;
+	height: 76px;
+	float: left;
+	background-image: url(../images/leftNav_04.gif);
+	background-repeat: no-repeat;
+}
+#mail {
+	width: 71px;
+	height: 76px;
+	float: left;
+	background: url(../images/leftNav_05.gif) no-repeat;
+}
+#search{
+	width: 318px;
+	height: 60px;
+	padding:15px 0 0 0;
+	float: left;
+	background:#F2F2F2;
+}
+#SearchMoForm{
+	height: 25px;
+}
+#time{
+	width: 318px;
+	height: 109px;
+	float: left;
+	background: url(../images/leftNav_07.gif) no-repeat;
+}
