@@ -571,6 +571,10 @@ footer .copynote{
     h1 {
         font-size: 30px;
     }
+    
+    h4 {
+    line-height: 1;
+    }
 
     .navbar-custom {
         padding: 20px 0;
@@ -625,7 +629,7 @@ footer .copynote{
      .works-text {
         color: #930000;
         font-family: 'Roboto', sans-serif;
-        font-size: 1.3em;
+        font-size: 1.5em;
         font-weight: 500;
         margin: 10px 0 10px 0px;
     }
@@ -638,7 +642,7 @@ footer .copynote{
     .works-text-dark{
         color: #fff;
         font-family: 'Roboto', sans-serif;
-        font-size: 1.6em;
+        font-size: 1.5em;
         font-weight: 500;
         margin: 10px 0 10px 0px;
     }
