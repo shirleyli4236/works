@@ -107,7 +107,7 @@ h1,h2 {
     margin: 0 0 20px 0;
     text-transform: none;
     color: rgba(235, 102, 102, 1);
-    font-weight: 500;
+    font-weight: 400;
     letter-spacing: 2px;
     line-height: 1.5;
 }
@@ -567,13 +567,9 @@ footer .copynote{
 /* ---------------------------------------------- */
 
 @media(max-width:767px) {
-
-    h1 {
-        font-size: 30px;
-    }
     
     h4 {
-    line-height: 1;
+        line-height: 1.2;
     }
 
     .navbar-custom {
