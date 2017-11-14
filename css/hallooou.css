@@ -107,7 +107,7 @@ h1,h2 {
     margin: 0 0 20px 0;
     text-transform: none;
     color: rgba(235, 102, 102, 1);
-    font-weight: 600;
+    font-weight: 500;
     letter-spacing: 2px;
     line-height: 1.5;
 }
@@ -121,7 +121,7 @@ h3 {
     font-size: 18px;
     text-transform: none;
     color: #000;
-    font-weight: 600;
+    font-weight: 500;
     letter-spacing: 2px;
     line-height: 1.5;
 }
@@ -131,14 +131,14 @@ h4 {
     margin: 0;
     text-transform: none;
     color: rgba(235, 102, 102, 1);
-    font-weight: 600;
+    font-weight: 500;
     letter-spacing: 2px;
     line-height: 1.5;
 }
 
 .highlight{
     font-size: 40px;
-    font-weight: 500;
+    font-weight: 400;
     letter-spacing: 2px;
     line-height: 1.5;
     color: rgba(235, 102, 102, 1);
@@ -173,7 +173,7 @@ h4 {
 .works-text h4{
     font-family: 'Roboto', sans-serif;
     font-size: 1.3em;
-    font-weight: 600;
+    font-weight: 500;
     color: #fff;
     margin: 10px 0 10px 0px;
 }
