@@ -98,12 +98,11 @@ body {
 
 body {
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: 300;
-    color: #000; 
     background-color: #fff;
 }
 
-h1,h2 {
+h1 {
+    font-size: 48px;
     margin: 0 0 20px 0;
     text-transform: none;
     color: rgba(235, 102, 102, 1);
@@ -112,9 +111,6 @@ h1,h2 {
     line-height: 1.5;
 }
 
-h1 {
-    font-size: 48px;
-}
 h4 {
     font-family: 'Roboto', sans-serif;
     text-transform: none;
@@ -149,7 +145,7 @@ h4 {
 
 .works-text {
     color: #930000;
-    font-size: 1.3em;
+    font-size: 20px;
     font-weight: 500;
     margin: 10px 0 10px 0px;
 }
@@ -355,10 +351,8 @@ h4 {
     position: relative;
     height: 50%;
     top: 50%;
-    font-size: 30px;
     font-family: "Raleway", "Helvetica Neue", Arial, sans-serif;
     text-transform: none;
-    font-weight: 600;
     text-align: center;
     -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
@@ -372,18 +366,19 @@ h4 {
     display: inline-block;
     position: relative;
     height: 100%;
+    margin-top: 30px;
 }
 
 .overlay ul li {
     display: block;
     height: 15%;
     height: calc(100% / 8);
-    min-height: 65px;
+    min-height: 50px;
     position: relative;
     opacity: 0;
 }
 
-.overlay ul li a {
+.overlay-menu ul li a {
     font-size: 34px;
     display: block;
     position: relative;
@@ -392,40 +387,64 @@ h4 {
     overflow: hidden;
 }
 
-.overlay ul li a:hover:after,
-.overlay ul li a:focus:after,
-.overlay ul li a:active:after {
+.overlay-menu ul li a:hover:after,
+.overlay-menu ul li a:focus:after,
+.overlay-menu ul li a:active:after {
     width: 50%;
 }
 
-.item{
-    font-size: 34px;
+.item {
     display: block;
     position: relative;
     color: #fff;
     text-decoration: none;
     overflow: hidden;
 }
-.item a:link,{
-    color: #fff;
 
+.item a {
+    font-size: 34px;
 }
-.item a:link, a:visited {
-    color: #fff;
 
-}
 .item a:hover, a:active{
     color: #600000;
-
 }
-.item p{
-    margin-top: 15px;
+
+.item-text ul li a {
     font-size: 28px;
 }
 
+.item-text a:link, a:visited {
+    color: #fff;
+    
+}
+
+.item-text a:hover, a:active{
+    color: #600000;
+}
+
+.item-text ul li a:hover:after,
+.item-textul li a:focus:after,
+.item-text ul li a:active:after {
+    width: 50%;
+}
 
 /* Link underline on hover */
-.overlay ul li a:after {
+.overlay-menu ul li a:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0%;
+    height: 2px;
+    background: #fff;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    -webkit-transition: .15s;
+            transition: .15s;
+}
+
+.item-text ul li a:after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -527,7 +546,7 @@ footer .copynote{
 
     .works-text {
         color: #930000;
-        font-size: 1.3em;
+        font-size: 18px;
         font-weight: 500;
         margin: 10px 0 10px 0px;
     }
@@ -557,7 +576,7 @@ footer .copynote{
     .works-text-dark{
         color: #fff;
         font-family: 'Roboto', sans-serif;
-        font-size: 1.6em;
+        font-size: 18px;
         font-weight: 500;
         margin: 10px 0 10px 0px;
     }
