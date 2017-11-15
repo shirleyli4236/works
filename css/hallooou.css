@@ -47,44 +47,6 @@ table {
 	border-spacing: 0;
 }
 
-/*  background
-/* ---------------------------------------------- */
-.pace {
-  -webkit-pointer-events: none;
-  pointer-events: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 999999;
-  -webkit-transform: translate3d(0, -50px, 0);
-  -ms-transform: translate3d(0, -50px, 0);
-  transform: translate3d(0, -50px, 0);
-  -webkit-transition: -webkit-transform .5s ease-out;
-  -ms-transition: -webkit-transform .5s ease-out;
-  transition: transform .5s ease-out;
-}
-
-.pace.pace-active {
-  -webkit-transform: translate3d(0, 0, 0);
-  -ms-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-}
-
-.pace .pace-progress {
-  display: block;
-  position: fixed;
-  z-index: 2000;
-  top: 0;
-  right: 100%;
-  width: 100%;
-  height: 10px;
-  background: rgba(235, 102, 102, 1); /* Primary color, can be changed via colors.css */
-  pointer-events: none;
-}
 
 
 /* styles
@@ -98,47 +60,43 @@ body {
 
 body {
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: 300;
-    color: #000; 
     background-color: #fff;
 }
 
-h1,h2 {
-    margin: 0 0 20px 0;
+h1,h2,h3,h4 {
     text-transform: none;
-    color: rgba(235, 102, 102, 1);
-    font-weight: 500;
     letter-spacing: 2px;
     line-height: 1.5;
 }
 
-h1 {
+h1{
     font-size: 48px;
+    font-weight: 400;
+    color: rgba(235, 102, 102, 1);
+    margin: 0 0 20px 0;
+    
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+    margin: 30px 0 10px 0;
 }
 
 h3 {
-    margin: 30px 0 10px 0;
     font-size: 18px;
-    text-transform: none;
-    color: #000;
-    font-weight: 500;
-    letter-spacing: 2px;
-    line-height: 1.5;
+    font-weight: 400;
+    color: rgba(235, 102, 102, 1);
+
 }
 
-h4 {
-    font-size: 18px;
-    margin: 0;
-    text-transform: none;
-    color: rgba(235, 102, 102, 1);
-    font-weight: 500;
-    letter-spacing: 2px;
-    line-height: 1.5;
+p{
+    color: #5B5B5B;
 }
 
 .highlight{
-    font-size: 40px;
-    font-weight: 400;
+    font-size: 48px;
     letter-spacing: 2px;
     line-height: 1.3;
     color: rgba(235, 102, 102, 1);
@@ -170,15 +128,15 @@ h4 {
     color: #fff;
 }
 
-.works-text h4{
+.works-text h4 {
     font-family: 'Roboto', sans-serif;
-    font-size: 1.3em;
+    font-size: 20px;
     font-weight: 500;
     color: #fff;
-    margin: 10px 0 10px 0px;
+    margin: 15px 0 10px 0px;
 }
 
-.works-box-icon{
+.works-box-icon {
     width: 120px;
     height: 120px;
     margin: 0 auto;
@@ -196,21 +154,27 @@ h4 {
     transition: all .6s;
 }
 
-.more{
-    margin-bottom: 30px;
+.works-box-icon:hover {
+    border-radius: 10px;
+    color: rgba(235, 102, 102, 1);
+    border-radius: 50%;
+    background-color: #fff; 
 }
 
-a.more {
+.works-text p {
+    width: 80px;
+    margin: 0 auto;
+    margin-bottom: 30px;
 	color: #fff;
 	text-decoration: none;
 	font-size: 1em;
 	font-weight: 400;
 	padding: 3px 12px;
-	border: 2px solid #fff;
+	border: 1px solid #fff;
 	border-radius: 10px;
-    z-index:1;  
+    z-index:1; 
 }
-a.more:hover{
+.works-text p:hover{
     border-radius: 10px;
     color: rgba(235, 102, 102, 1);
     background-color: #fff; 
@@ -649,21 +613,25 @@ footer .copynote{
     }
 
     .works-box-icon{
-    width: 120px;
-    height: 120px;
-    margin: 0 auto;
-    font-size: 40px;
-    border: 2px solid #fff;
-    color: #fff;
-    line-height: 120px;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-    -o-transition: all .6s;
-    -moz-transition: all .6s;
-    -webkit-transition: all .6s;
-    -ms-transition: all .6s;
-    transition: all .6s;
+        width: 120px;
+        height: 120px;
+        margin: 0 auto;
+        font-size: 40px;
+        border: 2px solid #fff;
+        color: #fff;
+        line-height: 120px;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        -o-transition: all .6s;
+        -moz-transition: all .6s;
+        -webkit-transition: all .6s;
+        -ms-transition: all .6s;
+        transition: all .6s;
+    }
+
+    .works-text p {
+        display: none;
     }
 
 }
