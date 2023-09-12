@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>EarthHour60-2017</title>
+    <meta http-equiv="pragma" content="no-cache"><!--Not be cached-->
+	<meta http-equiv="Cache-Control" content="max-age=0" /><!--緩存時間-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/ideal-image-slider.css">
+	<link rel="stylesheet" href="css/default.css">
+	<style media="screen">
+	body{
+		background:#1e1e1e;
+	}
+	#slider {
+		max-width: 100%;
+		margin: 0 auto;
+	}
+	</style>
+</head>
+<body>
+
+	<div id="slider">
+		<img data-src="img/01.jpg" title="01" alt=""/>
+		<img data-src="img/02.jpg" title="02" alt=""/>
+		<img data-src="img/03.jpg" title="03" alt=""/>
+		<img data-src="img/04.jpg" title="04" alt=""/>
+		<img data-src="img/05.jpg" title="05" alt=""/>
+		<img data-src="img/06.jpg" title="06" alt=""/>
+		<img data-src="img/07.jpg" title="07" alt=""/>
+		<img data-src="img/08.jpg" title="08" alt=""/>
+		<img data-src="img/09.jpg" title="09" alt=""/>
+		<img data-src="img/10.jpg" title="10" alt=""/>
+		<img data-src="img/11.jpg" title="11" alt=""/>
+	</div>
+
+	<script src="js/ideal-image-slider.js"></script>
+	<script src="js/iis-captions.js"></script>
+	<script>
+	var slider = new IdealImageSlider.Slider('#slider');
+	slider.addCaptions();
+	slider.stop();
+	</script>
+</body>
+</html>
