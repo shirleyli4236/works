@@ -1,12 +1,40 @@
 // jQuery to collapse the navbar on scroll
 $(window).scroll(function() {
     if ($(".navbar").offset().top > 50) {
-        $(".navbar-fixed-top").addClass("top-nav-collapse");
+        $(".navbar-custom").addClass("top-nav-collapse");
         $(".scroll-top").fadeIn('1000', "easeInOutExpo");
     } else {
-        $(".navbar-fixed-top").removeClass("top-nav-collapse");
+        $(".navbar-custom").removeClass("top-nav-collapse");
         $(".scroll-top").fadeOut('1000', "easeInOutExpo");
     }
+});
+
+// Back to Top button
+// 註：這段特意放在檔案最前面，避免被下方其他區塊（例如尚未載入的
+// owlCarousel、YouTube Player、Google Maps 等外掛）拋出的錯誤影響，
+// 導致這段程式碼沒有機會被執行。
+$(function() {
+
+    var $backToTop = $('#backToTop'),
+        showAfter = 300; // 捲動超過 300px 才顯示按鈕
+
+    // 監聽捲動事件，控制按鈕顯示/隱藏
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > showAfter) {
+            $backToTop.addClass('show');
+        } else {
+            $backToTop.removeClass('show');
+        }
+    });
+
+    // 點擊按鈕平滑捲動回頂部
+    $backToTop.click(function(event) {
+        event.preventDefault();
+        $('html, body').stop().animate({
+            scrollTop: 0
+        }, 800, 'swing'); // 使用 jQuery 內建的 swing，不需額外的 easing 外掛
+    });
+
 });
 
 // jQuery for page scrolling feature - requires jQuery Easing plugin
@@ -609,3 +637,32 @@ $(function() {
     });
 
 });
+
+
+/* Dark Mode（深色模式切換） */
+(function () {
+    var body = document.body;
+    var toggleBtn = document.getElementById('darkModeToggle');
+    var icon = document.getElementById('darkModeIcon');
+
+    // 找不到按鈕就不執行（例如某些子頁面還沒加上切換按鈕）
+    if (!toggleBtn || !icon) return;
+
+    function applyTheme(isDark) {
+        body.classList.toggle('dark-mode', isDark);
+        icon.className = isDark ? 'fa fa-sun-o' : 'fa fa-moon-o';
+        localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    }
+
+    function initTheme() {
+        var saved = localStorage.getItem('theme');
+        var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        applyTheme(saved === 'dark' || (!saved && prefersDark));
+    }
+
+    toggleBtn.addEventListener('click', function () {
+        applyTheme(!body.classList.contains('dark-mode'));
+    });
+
+    initTheme();
+})();
