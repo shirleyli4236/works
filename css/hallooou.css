@@ -400,9 +400,11 @@ p {
     background:#222;
 }
 
+/* 讓標題在手機上有足夠寬度，並維持單行 */
 .carousel-caption {
-    text-shadow: none;
-    bottom: 25%;
+        left: 5%;
+        right: 5%;
+        bottom: 20%;
 }
 
 .carousel-caption h1 {
@@ -422,7 +424,7 @@ p {
 /* h2 文字特效-字母翻牌效果 */
 .camera {
     display: inline-block;        /* 幫助排版，看自己需求也可以移除這行 */
-    font-size: 72px;             /* 字體大小移動到這裡，為了讓 perspective:3em 有參考依據 */
+    font-size: 14vw;             /* 字體大小移動到這裡，為了讓 perspective:3em 有參考依據 */
     line-height: 0.8;             /* 行高跟隨字體大小移動到這邊 */
     perspective-origin: 50% 50%;  /* 攝影機中心點對齊中心 */
     perspective: 3em;             /* 攝影機透視距離為 3em = 150px x 3 */
@@ -679,10 +681,11 @@ footer .copynote{
         font-size: 38px;
     }
 
+    /* 副標題縮小，避免變成三行 */
     .highlight {
-        font-size: 36px;
-        letter-spacing: 2px;
-        line-height: 1.3;
+        font-size: 22px;
+        letter-spacing: 1px;
+        line-height: 1.4;
         color: rgba(235, 102, 102, 1);
     }
 
