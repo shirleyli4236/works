@@ -276,7 +276,15 @@ h4 {
 .modal-header {
     width: 100%;
 }
-
+.modal-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0;
+    border-bottom: 1px solid #dee2e6;
+    border-top-left-radius: calc(.3rem - 1px);
+    border-top-right-radius: calc(.3rem - 1px);
+}
 button.close {
     position: absolute;
     top: 30px;
@@ -288,8 +296,8 @@ button.close {
     font-size: 2em;
     font-weight: 600; 
     opacity: 1;
-    color: #000;
-    background-color: rgba(255, 255, 255, 0.5);
+    color: #fff;
+    background-color: rgba(235, 102, 102, 0.7);
     width: 50px;
     height: 50px;
     padding: 0;
@@ -298,6 +306,11 @@ button.close {
     border: none;
     margin: 0;
     z-index: 10;
+}
+button.close:hover,
+button.close:focus,
+button.close.active {
+    color: #fff;
 }
 
 /* text 間距
@@ -607,12 +620,11 @@ footer .copynote {
     outline-offset: 2px;
 }
 
-
 /* Media Queries [min-width:768px]
 /* ---------------------------------------------- */
 
 @media(min-width:768px) {
-
+    
     .navbar-custom {
         padding: 20px 0;
         border-bottom: 0;
