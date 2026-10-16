@@ -424,7 +424,7 @@ p {
 /* h2 文字特效-字母翻牌效果 */
 .camera {
     display: inline-block;        /* 幫助排版，看自己需求也可以移除這行 */
-    font-size: 14vw;             /* 字體大小移動到這裡，為了讓 perspective:3em 有參考依據 */
+    font-size: 12vw;             /* 字體大小移動到這裡，為了讓 perspective:3em 有參考依據 */
     line-height: 0.8;             /* 行高跟隨字體大小移動到這邊 */
     perspective-origin: 50% 50%;  /* 攝影機中心點對齊中心 */
     perspective: 3em;             /* 攝影機透視距離為 3em = 150px x 3 */
