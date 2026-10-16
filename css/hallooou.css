@@ -549,6 +549,7 @@ h2:hover::after {
 footer .copynote{
     color:#fff;
     padding: 20px 0;
+    line-height: 1.6;
     background:rgba(54, 53, 54, 1); /* Dark color/Footer color, can be changed via colors.css */
 }
 
